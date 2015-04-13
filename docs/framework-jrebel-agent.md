@@ -1,5 +1,5 @@
-# JRebel Agent Framework
-This framework enables the use of [JRebel][jrebel] with deployed applications. The JRebel agent is added to the JVM with the [JRebel Remoting][remoting] plugin enabled.
+# JRebel Agent Framework 
+This framework enables the use of [JRebel][jrebel] with deployed applications. Pushing any [JRebel Cloud/Remote][remoting] enabled application (containing `rebel-remote.xml`) to the Bluemix cloud platform will automatically download the latest version of JRebel and set it up for use. The JRebel agent is added to the JVM with the [JRebel Cloud/Remote][remoting] plugin enabled. 
 
 <table>
   <tr>
@@ -12,6 +12,8 @@ This framework enables the use of [JRebel][jrebel] with deployed applications. T
 </table>
 Tags are printed to standard output by the Buildpack detect script.
 
+For more information regarding setup and configuration, please refer to the [JRebel with IBM Bluemix tutorial][bluemix]. 
+
 ## Configuration
 The framework can be configured by modifying the [`config/jrebelagent.yml`][jrebelagentyml] file in a buildpack fork.
 
@@ -22,4 +24,5 @@ The framework can be configured by modifying the [`config/jrebelagent.yml`][jreb
 
 [jrebel]: http://zeroturnaround.com/software/jrebel/
 [remoting]: http://manuals.zeroturnaround.com/jrebel/remoting/index.html
+[bluemix]: http://manuals.zeroturnaround.com/jrebel/remoting/bluemix.html
 [jrebelagentyml]: ../config/jrebelagent.yml
